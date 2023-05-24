@@ -8,6 +8,9 @@ export class PreAsignacion extends Document {
     docente_id: string
 
     @Prop({ required: true })
+    tipo_vinculacion_id: string
+
+    @Prop({ required: true })
     espacio_academico_id: string
 
     @Prop({ required: true })
