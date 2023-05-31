@@ -4,13 +4,13 @@ import { Document } from "mongoose";
 @Schema({ collection: 'carga_plan' })
 export class CargaPlan extends Document {
 
-    @Prop({ required: true })
+    @Prop({ required: false })
     espacio_academico_id: string
 
     @Prop({ required: false })
     actividad_id: string
 
-    @Prop({ required: false })
+    @Prop({ required: true })
     plan_docente_id: string
 
     @Prop({ required: true })
