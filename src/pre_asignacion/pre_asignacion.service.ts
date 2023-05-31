@@ -29,7 +29,7 @@ export class PreAsignacionService {
     async getAll(filterDto: FilterDto): Promise<PreAsignacion[]> {
         try {
             const filtersService = new FiltersService(filterDto);
-            return await this.preAsignacionModel.find(filtersService.getQuery(), filtersService.getFields(), filtersService.getLimitAndOffset())
+            return await this.preAsignacionModel.find()
                 .sort(filtersService.getSortBy()).exec();
         }
         catch (error) {
@@ -42,7 +42,7 @@ export class PreAsignacionService {
             return await this.preAsignacionModel.findById(id).exec();
         }
         catch (error) {
-            return null;
+            return error;
         };
     }
 
