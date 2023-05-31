@@ -14,8 +14,9 @@ import { PreAsignacionModule } from './pre_asignacion/pre_asignacion.module';
 @Module({
   imports: [
     MongooseModule.forRoot(
-      `mongodb://${environment.USER}:${environment.PASS}@` + `${environment.HOST}:${environment.PORT}/${environment.DB}?authSource=${environment.AUTH_DB}`,{
-        // useFindAndModify: false
+      `mongodb://${environment.USER}:${environment.PASS}@` + `${environment.HOST}:${environment.PORT}/${environment.DB}?authSource=${environment.AUTH_DB}`,
+      { 
+        useFindAndModify: false 
       }), ActividadModule, CargaPlanModule, ConsolidadoDocenteModule, EstadoConsolidadoModule, EstadoPlanModule, PlanDocenteModule, PreAsignacionModule
   ],
 
