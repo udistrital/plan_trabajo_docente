@@ -17,6 +17,8 @@ export class PreAsignacionService {
             const preAsignacion = new this.preAsignacionModel(preAsignacionDto);
             preAsignacion.fecha_creacion = new Date();
             preAsignacion.fecha_modificacion = new Date();
+            preAsignacion.activo = true;
+            this.preAsignacionModel.validate(preAsignacion);
             return await preAsignacion.save();
         }
         catch (error) {
@@ -31,7 +33,7 @@ export class PreAsignacionService {
                 .sort(filtersService.getSortBy()).exec();
         }
         catch (error) {
-            return null;
+            return error;
         }
     }
 
