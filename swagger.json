@@ -1349,10 +1349,19 @@
                     "plan_docente_id": {
                         "type": "string"
                     },
+                    "periodo_id": {
+                        "type": "string"
+                    },
+                    "proyecto_academico_id": {
+                        "type": "string"
+                    },
                     "estado_consolidado_id": {
                         "type": "string"
                     },
                     "respuesta_decanatura": {
+                        "type": "string"
+                    },
+                    "consolidado_coordinacion": {
                         "type": "string"
                     },
                     "cumple_normativa": {
@@ -1375,8 +1384,11 @@
                 },
                 "required": [
                     "plan_docente_id",
+                    "periodo_id",
+                    "proyecto_academico_id",
                     "estado_consolidado_id",
                     "respuesta_decanatura",
+                    "consolidado_coordinacion",
                     "cumple_normativa",
                     "aprobado",
                     "activo",
