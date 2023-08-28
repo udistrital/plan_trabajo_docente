@@ -14,16 +14,7 @@ export class CargaPlan extends Document {
     plan_docente_id: string
 
     @Prop({ required: true })
-    sede_id: string
-
-    @Prop({ required: true })
-    edificio_id: string
-
-    @Prop({ required: true })
-    salon_id: string
-
-    @Prop({ required: true })
-    horario: string
+    horario_id: string
 
     @Prop({ required: true })
     hora_inicio: number
