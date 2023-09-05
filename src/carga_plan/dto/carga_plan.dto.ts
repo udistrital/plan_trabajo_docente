@@ -12,7 +12,10 @@ export class CargaPlanDto {
     readonly plan_docente_id: string;
 
     @ApiProperty()
-    readonly horario_id: string;
+    readonly colocacion_espacio_academico_id: string;
+
+    @ApiProperty()
+    readonly salon_id: string;
 
     @ApiProperty()
     readonly hora_inicio: number;
