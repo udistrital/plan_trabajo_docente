@@ -1298,16 +1298,10 @@
                     "plan_docente_id": {
                         "type": "string"
                     },
-                    "sede_id": {
-                        "type": "string"
-                    },
-                    "edificio_id": {
+                    "colocacion_espacio_academico_id": {
                         "type": "string"
                     },
                     "salon_id": {
-                        "type": "string"
-                    },
-                    "horario": {
                         "type": "string"
                     },
                     "hora_inicio": {
@@ -1332,10 +1326,8 @@
                     "espacio_academico_id",
                     "actividad_id",
                     "plan_docente_id",
-                    "sede_id",
-                    "edificio_id",
+                    "colocacion_espacio_academico_id",
                     "salon_id",
-                    "horario",
                     "hora_inicio",
                     "duracion",
                     "activo",
